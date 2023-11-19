@@ -4,21 +4,21 @@
  
 # Annotator for LiDAR Semantic Segmentation
 
-[Annotator: An Generic Active Learning Baseline for LiDAR Semantic Segmentation]()  (**NeurIPS 2023**)
+[Annotator: An Generic Active Learning Baseline for LiDAR Semantic Segmentation](https://binhuixie.github.io/annotator-web/)  (**NeurIPS 2023**)
 
 [Binhui Xie](https://binhuixie.github.io), [Shuang Li](https://shuangli.xyz), [Qingju Guo](https://github.com/WAAutomation), [Chi Harold Liu](https://scholar.google.com/citations?user=3IgFTEkAAAAJ&hl=en) and [Xinjing Cheng](https://scholar.google.com/citations?user=8QbRVCsAAAAJ&hl=en)
 
 
-[//]: # ([![Paper]&#40;https://img.shields.io/badge/Paper-arXiv-%23B31B1B?style=flat-square&#41;]&#40;https://arxiv.org/abs/2111.12940&#41;&nbsp;&nbsp;)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-%23B31B1B?logo=arxiv&style=flat-square)](https://arxiv.org/pdf/2310.20293)&nbsp;&nbsp;
+[![Poster](https://img.shields.io/badge/Poster-Dropbox-%230061FF?logo=dropbox&style=flat-square)](https://www.dropbox.com/scl/fi/esor1vqrtklumbtb5l5j8/annotator_poster.pdf?rlkey=vi3tibnzowuzo4qmfy2r33vjh&dl=0)&nbsp;&nbsp;
+[![Slides](https://img.shields.io/badge/Slides-Dropbox-%230061FF?logo=dropbox&style=flat-square)](https://www.dropbox.com/scl/fi/8ca79302y9168iu0ctxyv/virtual-video-5min.pdf?rlkey=gkc90hg35h1hfsoyol4clmzby&dl=0)&nbsp;&nbsp;
 
 [//]: # ([![Models]&#40;https://img.shields.io/badge/Model-Google-%230061FF?logo=googledrive&style=flat-square&#41;]&#40;https://drive.google.com/drive/folders/1GUGsMHnBHlk5rlkAsUq55O2GNdFF_--a&#41;&nbsp;&nbsp;)
 
 [//]: # ([![Bilibili]&#40;https://img.shields.io/badge/Video-Bilibili-%2300A1D6?logo=bilibili&style=flat-square&#41;]&#40;https://www.bilibili.com/video/BV1oS4y1e7J5&#41;&nbsp;&nbsp;)
 
 [//]: # ([![YouTube]&#40;https://img.shields.io/badge/Video-YouTube-%23FF0000?logo=youtube&style=flat-square&#41;]&#40;https://www.youtube.com/watch?v=kN4Kru2fL-g&#41;&nbsp;&nbsp;)
-
-[//]: # ([![Slides]&#40;https://img.shields.io/badge/Poster-Dropbox-%230061FF?logo=dropbox&style=flat-square&#41;]&#40;https://www.dropbox.com/s/mm14k36ydirk2w8/cvpr22_poster_2x1_in-person.pdf?dl=0&#41;&nbsp;&nbsp;)
-
+  
 <img alt="image" src="docs/figs/pipeline.png" width="60%" />
 
 </div>
@@ -31,20 +31,29 @@
 
 
 ## Usage
-Coming soon!
+### Prerequisites
+Please see [INSTALL.md](docs/INSTALL.md).
+
+### Data Preparation
+Please see [DATA.md](docs/DATA.md)
+
 
 
 ## Citation
 If you find this project useful in your research, please consider citing:
 ```latex
 @inproceedings{xie2023annotator,
- author = {Xie, Binhui and Li, Shuang and Guo, Qingju and Liu, Harold Chi and Cheng, Xinjing},
+ author = {Binhui Xie, Shuang Li, Qingju Guo, Chi Harold Liu, Xinjing Cheng},
  booktitle = {Advances in Neural Information Processing Systems},
  title = {Annotator: An Generic Active Learning Baseline for LiDAR Semantic Segmentation},
  year = {2023}
 }
 
 ```
+
+## Acknowledgements
+This project is based on the following projects: [OpenPCDet](https://github.com/open-mmlab/OpenPCDet), [PCSeg](https://github.com/PJLab-ADG/PCSeg), [LaserMix](https://github.com/ldkong1205/LaserMix) and [SynLiDAR](https://github.com/xiaoaoran/SynLiDAR). We thank their authors for making the source code publicly available.
+
 
 ## Contact
 
