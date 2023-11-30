@@ -20,17 +20,6 @@ pip install pyyaml easydict numba wandb setproctitle prettytable sharedarray tqd
 
 ### Step 3: Install Necessary Libraries
 
-[//]: # (#### 4.1 - [nuScenes devkit]&#40;https://github.com/nutonomy/nuscenes-devkit&#41;)
-
-[//]: # (:oncoming_automobile: **Note:** This toolkit is **required** in order to run experiments on the [nuScenes]&#40;https://www.nuscenes.org/nuscenes&#41; dataset.)
-
-[//]: # (```Shell)
-
-[//]: # (pip install nuscenes-devkit )
-
-[//]: # (```)
-
-
 #### 3.1 - [TorchSparse](https://github.com/mit-han-lab/torchsparse)
 **Note:** The following steps are **required** in order to use the `voxel` and `fusion` backbones in this codebase.
 
@@ -75,12 +64,16 @@ Installing collected packages: torchsparse
 Successfully installed torchsparse-2.0.0b0
 ```
 
+
+
 #### 3.2 - [PyTorch Scatter](https://github.com/rusty1s/pytorch_scatter)
 
 ```Shell
 
 conda install pytorch-scatter -c pyg
 ```
+
+
 
 #### 3.3 - [nuScenes devkit](https://github.com/nutonomy/nuscenes-devkit)
 Note: This toolkit is required in order to run experiments on the [nuScenes](https://www.nuscenes.org/nuscenes) dataset.
