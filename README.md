@@ -7,7 +7,7 @@
 Annotator: An Generic Active Learning Baseline for LiDAR Semantic Segmentation
 
 [![Conference](http://img.shields.io/badge/NeurIPS-2023-%23B31B1B)](https://openreview.net/forum?id=uiiVSVADDc) 
-[![Page](http://img.shields.io/badge/Project-page-%23B31B1B?logo=github&style=flat-square)]()
+[![Page](http://img.shields.io/badge/Project-page-%23B31B1B?logo=github&style=flat-square)](https://binhuixie.github.io/annotator-web/)
 [![Paper](https://img.shields.io/badge/Paper-arXiv-%23B31B1B?logo=arxiv&style=flat-square)](https://arxiv.org/pdf/2310.20293)&nbsp;&nbsp;
 [![Poster](https://img.shields.io/badge/Poster-Dropbox-%23B31B1B?logo=dropbox&style=flat-square)](https://www.dropbox.com/scl/fi/esor1vqrtklumbtb5l5j8/annotator_poster.pdf?rlkey=vi3tibnzowuzo4qmfy2r33vjh&dl=0)&nbsp;&nbsp;
 [![Slides](https://img.shields.io/badge/Slides-Dropbox-%23B31B1B?logo=dropbox&style=flat-square)](https://www.dropbox.com/scl/fi/8ca79302y9168iu0ctxyv/virtual-video-5min.pdf?rlkey=gkc90hg35h1hfsoyol4clmzby&dl=0)&nbsp;&nbsp;
