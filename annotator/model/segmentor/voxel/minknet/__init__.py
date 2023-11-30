@@ -1,0 +1,1 @@
+from .minknet import MinkNet
