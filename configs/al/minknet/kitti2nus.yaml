@@ -1,0 +1,53 @@
+MODALITY: 'voxel'
+
+DATA:
+    DATASET: 'nuscenes'
+    PETRELOSS_CONFIG: None
+    DATA_PATH: 'data_root/nuScenes'
+    VOXEL_SIZE: 0.05
+    AUGMENT: 'GlobalAugment'
+    NUM_POINTS: 1000000
+    TRAINVAL: False
+    TTA: False
+    NUM_CLASSES: 7
+    TARGET: 'nus'
+    TARGET_PATH: 'data_root/nuScenes'
+
+MODEL:
+    NAME: MinkNet
+    IGNORE_LABEL: 0 
+    IN_FEATURE_DIM: 4
+    BLOCK: ResBlock
+    NUM_LAYER: [2, 2, 2, 2, 2, 2, 2, 2]
+    PLANES: [32, 32, 64, 128, 256, 256, 128, 96, 96]
+    cr: 1.0
+    DROPOUT_P: 0.0
+    LABEL_SMOOTHING: 0.1
+    IF_DIST: False
+
+OPTIM:
+    BATCH_SIZE_PER_GPU: 16
+    NUM_EPOCHS: 50
+    OPTIMIZER: sgd
+    LR_PER_SAMPLE: 0.01
+    WEIGHT_DECAY: 0.0001
+    MOMENTUM: 0.9
+    NESTEROV: True
+    GRAD_NORM_CLIP: 10
+    SCHEDULER: linear_warmup_with_cosdecay
+    WARMUP_EPOCH: 1
+
+ACTIVE:
+    ACTIVE_METHOD: 'VCD'  # choices: [VCD, Random, Entropy, Margin]
+    SELECT_METHOD: 'voxel'
+    VOXEL_SELECT_METHOD: 'max'
+    ACTIVE_FREQUENCY: 3
+    ACTIVE_TIMES: 5
+    SELECT_NUM: 1
+    ACTIVE_VOXEL_SIZE: 0.25
+    MAX_POINT_PER_VOXEL: 100
+
+WANDB:
+    USE_WANDB: False
+    PROJECT_NAME: 'annotator'
+    ENTITY_NAME: $USERNAME
