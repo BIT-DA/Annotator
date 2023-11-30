@@ -1,0 +1,43 @@
+MODALITY: 'voxel'
+
+DATA:
+    DATASET: 'synlidar'
+    PETRELOSS_CONFIG: None
+    DATA_PATH: 'data_root/Synlidar/sequences/'
+    VOXEL_SIZE: 0.05
+    AUGMENT: 'GlobalAugment'
+    NUM_POINTS: 1000000
+    TRAINVAL: False
+    TTA: False
+    NUM_CLASSES: 13
+    TARGET: 'poss'
+    TARGET_PATH: 'data_root/SemanticPOSS/sequences/'
+
+MODEL:
+    NAME: MinkNet
+    IGNORE_LABEL: 0 
+    IN_FEATURE_DIM: 4
+    BLOCK: ResBlock
+    NUM_LAYER: [2, 2, 2, 2, 2, 2, 2, 2]
+    PLANES: [32, 32, 64, 128, 256, 256, 128, 96, 96]
+    cr: 1.0
+    DROPOUT_P: 0.0
+    LABEL_SMOOTHING: 0.1
+    IF_DIST: False
+
+OPTIM:
+    BATCH_SIZE_PER_GPU: 16
+    NUM_EPOCHS: 10
+    OPTIMIZER: sgd
+    LR_PER_SAMPLE: 0.01
+    WEIGHT_DECAY: 0.0001
+    MOMENTUM: 0.9
+    NESTEROV: True
+    GRAD_NORM_CLIP: 10
+    SCHEDULER: linear_warmup_with_cosdecay
+    WARMUP_EPOCH: 1
+
+WANDB:
+    USE_WANDB: False
+    PROJECT_NAME: 'annotator'
+    ENTITY_NAME: $USERNAME

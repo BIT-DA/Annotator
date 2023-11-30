@@ -2,7 +2,7 @@
 
 ### Train and evaluation
 
-Take `SynLiDAR to SemanticPOSS` as an example,
+Take `SynLiDAR` → `SemanticPOSS` as an example,
 
 preliminary (Source-only and Target-only)
 ```bash
