@@ -26,7 +26,7 @@ python train_active.py --amp --fix_random_seed --cfg_file configs/al/minknet/syn
 python train_active.py --amp --fix_random_seed --cfg_file configs/al/minknet/syn2poss.yaml --init_model_ckp "/path_to_synlidar2poss_sourceonly_checkpoint/ckp/checkpoint_epoch_10.pth" --set ACTIVE.ACTIVE_METHOD VCD
 
 # ADA  
-python train_active.py --amp --fix_random_seed --cfg_file configs/ada/minknet/syn2poss.yaml --init_model_ckp "/path_to_synlidar2poss_sourceonly_checkpoint/ckp/checkpoint_epoch_10.pth" --set ACTIVE.ACTIVE_METHOD VCD
+python train_active_da.py --amp --fix_random_seed --cfg_file configs/ada/minknet/syn2poss.yaml --init_model_ckp "/path_to_synlidar2poss_sourceonly_checkpoint/ckp/checkpoint_epoch_10.pth" --set ACTIVE.ACTIVE_METHOD VCD
 
 ```
 
@@ -53,6 +53,6 @@ python train_active.py --amp --fix_random_seed --cfg_file configs/al/spvcnn/syn2
 python train_active.py --amp --fix_random_seed --cfg_file configs/al/spvcnn/syn2poss.yaml --init_model_ckp "/path_to_synlidar2poss_sourceonly_checkpoint/ckp/checkpoint_epoch_10.pth" --set ACTIVE.ACTIVE_METHOD VCD
 
 # ADA  
-python train_active.py --amp --fix_random_seed --cfg_file configs/ada/spvcnn/syn2poss.yaml --init_model_ckp "/path_to_synlidar2poss_sourceonly_checkpoint/ckp/checkpoint_epoch_10.pth" --set ACTIVE.ACTIVE_METHOD VCD
+python train_active_da.py --amp --fix_random_seed --cfg_file configs/ada/spvcnn/syn2poss.yaml --init_model_ckp "/path_to_synlidar2poss_sourceonly_checkpoint/ckp/checkpoint_epoch_10.pth" --set ACTIVE.ACTIVE_METHOD VCD
 
 ```
